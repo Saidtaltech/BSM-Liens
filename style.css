@@ -1,0 +1,121 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #a7754d;
+  margin: 0;
+  padding: 0;
+}
+
+.card {
+  max-width: 300px;
+  height: 600px;
+  margin: 20px 10px 10px;
+  background-color: #a9bb4d;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  
+}
+
+.profile-photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #a9bb4d;
+  
+}
+img{
+  width: 80%;
+  padding-top: 10px;
+  border-radius: 10%;
+}
+h3{
+  font-weight: bolder;
+  color: #a9bb4d;
+  padding-top: 10px;
+  font-size: 15px;
+  width: 100%;
+  font-family: 'Kalam', cursive;
+}
+.Instruction {
+  width: 100%;
+  overflow: hidden;
+  padding: 0px;
+}
+
+p {
+  white-space: nowrap;
+  animation: scrollText 10s linear infinite;
+  margin-top: 80px;
+}
+
+@keyframes scrollText {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.social-icons {
+  display: flex;
+  /*justify-content: space-between;*/ 
+  margin-top: 50px ;
+  padding: 20px;
+  
+ 
+  
+}
+ul{
+  list-style-type: none;
+  padding: 0px 0px;
+  margin-top: 50px ;
+}
+.social-icons a {
+  text-decoration: none;
+  color: #000;
+  display: grid;
+  justify-items: center;
+  font-size: 10px;
+  color: #2f0601;
+}
+
+.social-icons a:focus{
+  color: #db144a ;
+}
+.social-icons img {
+  width: 30px;
+  height: 30px;
+  padding:5px;
+  transition: transform 0.4s ease;
+  background-color: #ffffff;
+}
+
+.social-icons img:focus {
+  transform: scale(1.3);
+  background-color: #a9bb4d;
+}
+.social-icons img:hover {
+  transform: scale(1.3);
+}
+h4{
+  font-size: 10px;
+  font-weight: lighter;
+  color: #2f0601;
+  margin-top: 5px;
+  font-family: Muli;
+  display: grid;
+  justify-items: center;
+
+}
+@media only screen and (max-width: 480px) {
+  .card {
+      max-width: 100%;
+      border-radius: 20px;
+      justify-content: center;
+  }
+}
